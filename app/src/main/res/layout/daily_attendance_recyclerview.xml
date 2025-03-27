@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="100dp"
+        app:cardCornerRadius="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#0DF216"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subjectCode"
+                android:text="Subject Code"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:text="Attendance Status"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/subjectCode"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:text=" Time"
+                android:drawableLeft="@drawable/time"
+                android:drawableTint="@color/black"
+                android:textSize="20dp"
+                android:layout_marginStart="100dp"
+                android:layout_toRightOf="@id/subjectCode"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text=" Date"
+                android:drawableLeft="@drawable/calender"
+                android:drawableTint="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:layout_below="@id/time"
+                android:layout_toRightOf="@id/subjectCode"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

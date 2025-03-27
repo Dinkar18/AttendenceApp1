@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="25dp"
+        >
+        <LinearLayout
+            android:background="@drawable/dialog_colo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:id="@+id/studentId"
+                android:hint="Student ID"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:id="@+id/studentClass"
+                android:hint="Student Class"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:id="@+id/subjectCode"
+                android:hint="Subject Code"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:id="@+id/stdSemester"
+                android:hint="Semester"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:textColor="@color/white"
+                android:text="Add"
+                android:backgroundTint="#2196F3"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="100dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/stdSemester"
+                android:id="@+id/add_dialog"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

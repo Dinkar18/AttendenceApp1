@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="class_name">
+        <item>CSE A</item>
+        <item>CSE B</item>
+        <item>CSE C</item>
+        <item>CSE D</item>
+    </string-array>
+</resources>

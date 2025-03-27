@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addStudent"
+        android:title="@string/add_student"
+        android:icon="@drawable/add_person"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/editAttendence"
+        android:title="Edit Attendence"
+        android:icon="@drawable/edit"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/print"
+        android:title="@string/print"
+        android:icon="@drawable/print"
+        android:iconTint="@color/black"
+        />
+
+</menu>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FacultyFragments.FacultyHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/view"
+        android:background="@drawable/back_view"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/view"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+             app:cardCornerRadius="28dp"
+            android:layout_column="0"
+            android:layout_marginStart="13dp"
+            android:layout_row="0"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                     android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/attendenceButton"
+                    android:src="@drawable/attendence_logo"
+                    app:tint="@color/black"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendence"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="28dp"
+            android:layout_marginStart="30dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/addUser"
+                    android:src="@drawable/add_person"
+                    app:tint="@color/black"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Student"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="28dp"
+            android:layout_column="0"
+            android:layout_marginStart="13dp"
+            android:layout_row="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/home1"
+                    app:tint="@color/black"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="28dp"
+            android:layout_marginStart="30dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/home1"
+                    app:tint="@color/black"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Faculty Home Page"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="#E21C1C"
+        android:textSize="30dp"
+        />
+</RelativeLayout>

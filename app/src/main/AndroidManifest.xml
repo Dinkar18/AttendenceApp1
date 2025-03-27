@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Attendence Management"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendenceApp">
+        <activity
+            android:name=".StudentActivity.StudentAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FacultySubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_D"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_C"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_B"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_A"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_H"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_G"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_F"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyAttendence.CSE_E"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity.AddStudentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AttendenceApp" />
+        <activity
+            android:name=".FacultyActivity.FacultyHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity.StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

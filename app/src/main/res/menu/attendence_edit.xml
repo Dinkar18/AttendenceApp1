@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addStudent"
+        android:title="@string/add_student"
+        android:icon="@drawable/add_person"
+        />
+    <item
+        android:id="@+id/changeTime"
+        android:title="@string/change_time"
+        android:icon="@drawable/time"
+        android:iconTint="@color/black"
+        />
+    <item
+        android:id="@+id/changeDate"
+        android:title="@string/change_date"
+        android:icon="@drawable/calender"
+        />
+    <item
+        android:id="@+id/print"
+        android:title="@string/print"
+        android:icon="@drawable/print"
+        />
+</menu>

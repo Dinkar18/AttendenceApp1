@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyAttendence.CSE_F">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFEB3B"
+        >
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/semester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="class name"
+                android:textColor="#9D2A2A"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/delete"
+                />
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/add"
+                />
+        </LinearLayout>
+
+    </Toolbar>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent"
+        android:id="@+id/recylerview"
+        tools:listitem="@layout/custom_recyler"
+        />
+</RelativeLayout>

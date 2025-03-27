@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="25dp"
+        >
+        <LinearLayout
+            android:background="@drawable/back_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/time"
+                android:id="@+id/setTime"
+                android:hint="Set Time"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/setDate"
+                android:hint="Set Date"
+                android:drawableLeft="@drawable/calender"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:textColor="#29C72F"
+                android:text="Set Data"
+                android:backgroundTint="@color/white"
+                android:textSize="20dp"
+                android:layout_marginStart="50dp"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/stdSemester"
+                android:id="@+id/setData"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

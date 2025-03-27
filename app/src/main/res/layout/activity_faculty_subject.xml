@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultySubjectActivity">
+<Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#15EB1D"
+    android:id="@+id/toolbar2"
+    >
+    <TextView
+        android:id="@+id/subjectPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_code_name"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/addSubject"
+        android:src="@drawable/add"
+        android:layout_marginStart="100dp"
+        />
+</Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar2"
+        tools:listitem="@layout/custom_subject_recyclerview"
+        android:id="@+id/subjectView"
+        />
+
+</RelativeLayout>

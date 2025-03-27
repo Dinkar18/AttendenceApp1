@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:contentPaddingRight="5dp"
+       android:id="@+id/mainLayout"
+       app:cardCornerRadius="10dp"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:padding="10dp"
+
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/attendenceStatus"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Attendence Status "
+               android:textSize="16dp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               />
+    <TextView
+        android:id="@+id/rollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll Id : "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+           <TextView
+               android:id="@+id/className"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Class : "
+               android:textSize="16dp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               />
+           <TextView
+               android:id="@+id/subjectCode"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Subject Code : "
+               android:textSize="16dp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:padding="4dp"
+           >
+
+           <TextView
+               android:id="@+id/currentTime"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="200dp"
+               android:drawableLeft="@drawable/time"
+               android:text="Current Time"
+               android:textColor="@color/black"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/currentDate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Current Date"
+               android:textSize="15dp"
+               android:layout_marginStart="200dp"
+               android:textStyle="bold"
+               android:drawableLeft="@drawable/calender"
+
+               android:textColor="@color/black"
+               />
+
+           <TextView
+               android:id="@+id/semester"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Semester : "
+               android:textSize="15dp"
+               android:layout_marginStart="200dp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               />
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+</RelativeLayout>
